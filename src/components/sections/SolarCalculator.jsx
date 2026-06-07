@@ -7,7 +7,7 @@ import Button from '../ui/Button'
 // ── Estimation assumptions (transparent, India-tuned, NOT a binding quote) ──
 const TARIFF = 8 // ₹ per unit (kWh) — typical residential slab
 const GEN_PER_KW_PER_DAY = 4 // units a 1 kW rooftop system generates per day
-const COST_PER_KW = 60000 // ₹ approx installed cost per kW (before subsidy)
+const COST_PER_KW = 70000 // ₹ approx installed cost per kW (before subsidy)
 
 function formatINR(n) {
   return '₹' + Math.round(n).toLocaleString('en-IN')
