@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* offset for sticky navbar when jumping to anchors */
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-ink dark:text-white;
+  }
+  section {
+    scroll-margin-top: 80px;
+  }
+  ::selection {
+    @apply bg-brand-orange/20;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+  .section-pad {
+    @apply py-20 md:py-28;
+  }
+  /* Small uppercase eyebrow label — a refined, custom touch */
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-brand-orange;
+  }
+  .gradient-text {
+    @apply text-brand-orange;
+  }
+  .card-base {
+    @apply rounded-2xl border border-slate-200/80 bg-white shadow-card transition-all duration-300 dark:border-slate-800 dark:bg-slate-900;
+  }
+  .btn-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange/40 focus-visible:ring-offset-2;
+  }
+}
+
+/* Hide scrollbar for filter chips on mobile while keeping scroll */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
