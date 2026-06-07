@@ -12,7 +12,6 @@ const links = [
   { label: 'Benefits', href: '#benefits' },
   { label: 'Calculator', href: '#calculator' },
   { label: 'Subsidy', href: '#subsidy' },
-  { label: 'Projects', href: '#projects' },
   { label: 'FAQ', href: '#faq' },
 ]
 

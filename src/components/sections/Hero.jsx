@@ -95,23 +95,6 @@ export default function Hero() {
             </span>
           </motion.div>
         </div>
-
-        {/* Stats strip on the image */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="mt-14 grid max-w-3xl grid-cols-2 gap-4 rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-md md:grid-cols-4"
-        >
-          {stats.map((s) => (
-            <div key={s.label} className="text-center">
-              <div className="text-3xl font-extrabold text-brand-orange md:text-4xl">
-                <Counter value={s.value} suffix={s.suffix} />
-              </div>
-              <div className="mt-1 text-xs font-medium text-slate-200 md:text-sm">{s.label}</div>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   )

@@ -7,7 +7,6 @@ import Services from './components/sections/Services'
 import Benefits from './components/sections/Benefits'
 import SolarCalculator from './components/sections/SolarCalculator'
 import SubsidyInfo from './components/sections/SubsidyInfo'
-import Gallery from './components/sections/Gallery'
 import FAQ from './components/sections/FAQ'
 import Contact from './components/sections/Contact'
 import FloatingEnquiry from './components/widgets/FloatingEnquiry'
@@ -26,7 +25,6 @@ export default function App() {
         <Benefits />
         <SolarCalculator />
         <SubsidyInfo />
-        <Gallery />
         <FAQ />
         <Contact />
       </main>
